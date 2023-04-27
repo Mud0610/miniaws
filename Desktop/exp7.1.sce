@@ -1,0 +1,12 @@
+clc;
+clear;
+close;
+NA = input ('Enter Numerical Aperture= ');
+r = input ("Enter angle of rays = ");
+gamma = r/2;
+theta_a = asin(NA);
+theta_a_deg = theta_a * 180/%pi;
+theta_as = asin(NA/cos(gamma));
+theta_as_deg = theta_as * 180/%pi;
+disp ("Acceptance for meridional rays in deg = ",theta_a_deg);
+disp ("Acceptance for skew rays= ",theta_as_deg);

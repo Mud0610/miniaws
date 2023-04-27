@@ -1,0 +1,49 @@
+Program:
+1) To calculate D-min :
+1 clc
+2 // Chapter 10 : Frequency Synthesizer
+3 //Example 10.3 page no 416 Modern Communication Circuits by Jack Smith
+4 fr =1*10^6 // reference frequency
+5 f =100*10^6 // given frequency
+6 fi =1*10^6 // increment in frequency
+7 Dmin =fr*f/fi
+
+Rizvi College of Engineering RF Design Lab
+
+EXTC Department (Sem VIII) Experiment No.0 5 Page |3
+8 mprintf ( 'The value of Dmin i s %d Hz ' ,Dmin )
+
+Output : The value of Dmin is = ______________
+
+2) To Calculate the VCO operating Frequency :
+1 clc
+2 // Chapter 10 : Frequency Synthesizer
+3 //Example 10.5 page no 426
+4 fr =100*10^3 //
+5 f =10*10^6 //
+6 fi =1*10^3 //
+7 fo=fr*f/fi //
+8 mprintf ( 'The value of VCO frequency is %3.2 e Hz ' ,fo)
+Output : The Value of VCO Output Frequency = ___________
+3) To Calculate the output frequency :
+1clc
+2 // Chapter 10 : Frequency Synthesizer
+3 //Example 10.8 page no 429
+4 N =100
+5 M =10 // count
+6 fr =10*10^3 // reference frequency
+7 fo=fr *(N+M^ -1) // output frequency
+8 mprintf ( 'the value of output frequency is % f Hz ' ,fo)
+Output : The value of Output frequency = ______________
+4) To calculate Single Sideband Noise Power at frequency offset at 0.5KHz. of Frequency
+Synthesizer using SCILAB :
+1 clc
+2 // Chapter 1 0 : Frequency Synthesizer
+3 //Example 10.11 page no 446
+4 disp (A signal sideband power is -144 db/Hz' )
+5 N =5*10^6 // frequency of reference oscillator
+6 M =5*10^3 // count
+7 No = -140+10* log10 ((N/M)^2) // the output noise power due to reference oscillator
+8 mprintf ( 'The signal sideband noise power at frequency offset of 0.5 KHz is %d dB/Hz '
+,No)
+Output : The signal sideband noise power at frequency offset of 0.5 KHz is ____dB/Hz
